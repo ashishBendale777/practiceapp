@@ -1,15 +1,15 @@
 import logo from './logo.svg';
-// import './App.css';
-// import MyLogin from './MyLogin';
+import './App.css';
+import MyLogin from './MyLogin';
 // import SwapCard from './SwapCard';
 import MyPage from './MyPage';
 
 function App() {
   return (
     <>
-      {/* <MyLogin /> */}
+      <MyLogin />
       {/* <SwapCard /> */}
-      <MyPage/>
+      {/* <MyPage/> */}
     </>
   );
 }

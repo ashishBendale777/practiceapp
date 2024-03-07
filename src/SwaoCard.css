@@ -1,0 +1,110 @@
+.sawp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    gap: 40px;
+}
+
+h2 {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    color: red;
+}
+
+.swap-card {
+    width: 300px;
+    height: 350px;
+    /* perspective: 100px; */
+    cursor: pointer;
+}
+
+.swap-card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.swap-card-container {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1.0s;
+    box-shadow: 0 4px 8px 0 black;
+    border-radius: 10px;
+}
+
+.swap-card:hover .swap-card-container {
+    transform: rotateY(180deg)
+}
+
+.card-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    background: red;
+}
+
+.front-face {
+    transform: rotateY(0deg);
+}
+
+.back-face {
+    display: flex;
+    transform: rotateY(180deg);
+}
+
+.swap-card-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin: 20px 0 0 0;
+}
+
+.row {
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    font-size: 2rem;
+}
+
+.row i {
+    color: #686767;
+}
+
+.ig:hover {
+    color: #e1306c;
+}
+
+.git:hover {
+    color: #000000;
+}
+
+.fb:hover {
+    color: #3b5998;
+}
+
+p {
+    text-align: justify;
+}

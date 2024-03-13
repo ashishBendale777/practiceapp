@@ -1,15 +1,40 @@
 import logo from './logo.svg';
-import './App.css';
-import MyLogin from './MyLogin';
-// import SwapCard from './SwapCard';
-import MyPage from './MyPage';
+import About from './pages/About';
+import Home from './pages/Home';
+import Skills from './pages/Skills';
+//import './App.css';
+import "./AllCss/Portfolio.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+import PortfolioNavBar from './componants/PortfolioNavBar';
+import MyCarausel from './componants/MyCarausel';
+import 'react-owl-carousel2/lib/styles.css';
+import MyOffCanva from './componants/MyOffCanva';
+import CanvaRoutes from './CanvaRoutes';
+
 
 function App() {
   return (
     <>
-      <MyLogin />
-      {/* <SwapCard /> */}
-      {/* <MyPage/> */}
+      {/* <PortfolioNavBar />
+      <section id='home'>
+        <Home />
+      </section>
+
+      <section id='about'>
+        <About />
+      </section>
+
+      <section id="skills">
+        <Skills />
+      </section> */}
+
+      {/* <MyCarausel /> */}
+
+      {/* <MyOffCanva /> */}
+      <CanvaRoutes/>
+
+
+
     </>
   );
 }

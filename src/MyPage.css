@@ -44,6 +44,7 @@
     font-style: italic;
     /* padding: 10px; */
     padding-left: 10px;
+    animation: fadeInAnimation ease 3s;
 }
 
 .form-container button {
@@ -51,4 +52,28 @@
     border: 1px solid white;
     padding: 10px;
     margin-top: 20px;
+
+}
+
+.form-container h1 {
+    /* transition: transform 1.0s; */
+    animation: fadeInAnimation ease 3s;
+}
+
+.form-container h1:hover {
+    transform: scale(2.3)
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        translate: 100px;
+        
+    }
+
+    100% {
+        opacity: 1;
+        /* transform: scaleY(2.3) */
+        /* transform: translateX(100,200); */
+    }
 }

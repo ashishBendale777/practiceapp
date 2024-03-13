@@ -5,7 +5,9 @@ import { Form } from 'react-bootstrap'
 const MyPage = () => {
   return (
     <div className='main-container'>
+      
       <div className='form-container'>
+      <h1>Ashish</h1>
         <Form>
           <Form.Control className='form-input' type='text' placeholder='Enter Name' />
           <Form.Control className='form-input' type='Email' placeholder='Enter Mail' />
